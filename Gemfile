@@ -8,6 +8,8 @@ end
 gem "bootstrap-sass", "3.3.7"
 gem "rails", "~> 5.1.2"
 gem "bcrypt",         "3.1.11"
+gem "config"
+
 
 gem "jquery-rails", "4.3.1"
 gem "sqlite3"
