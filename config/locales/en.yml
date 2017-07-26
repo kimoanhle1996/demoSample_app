@@ -8,6 +8,16 @@ en:
   welcome: "Welcome to the Sample App!"
   does: "does not exist"
   sign: "Sign up now!"
+  new: "New user?"
+  logout: "Log out"
+  login: "Log in"
+  users: "Users"
+  profile: "Profile"
+  setting: "Settings"
+  does:  "does not exist"
+  welcome: "Welcome to the Sample App!"
+  invalid: "Invalid email/password combination"
+  account: "Account"
   static_pages:
     application:
       rubbyonrails: "Ruby on Rails Tutorial Sample App"
@@ -45,7 +55,7 @@ en:
       by: "by"
       michael: "Michael Hartl"
       news: "News"
-  users:
-    new:
-      title: "Sign up"
-      p: "This will be a signup page for new users."
+    users:
+      new:
+        title: "Sign up"
+        p: "This will be a signup page for new users."
