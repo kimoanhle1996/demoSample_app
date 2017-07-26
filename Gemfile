@@ -10,13 +10,16 @@ gem "rails", "~> 5.1.2"
 gem "bcrypt",         "3.1.11"
 gem "config"
 
-
 gem "jquery-rails", "4.3.1"
+gem "faker",          "1.7.3"
 gem "sqlite3"
 gem "puma", "~> 3.7"
 gem "sass-rails", "~> 5.0"
 gem "rails-controller-testing"
 gem "uglifier", ">= 1.3.0"
+gem "will_paginate",           "3.1.5"
+gem "bootstrap-will_paginate", "1.0.0"
+gem "pry", "~> 0.10.3"
 
 gem "coffee-rails", "~> 4.2"
 gem "turbolinks", "~> 5"
