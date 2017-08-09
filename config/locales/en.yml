@@ -5,8 +5,9 @@ en:
   contact: "Contact"
   help: "Help"
   log: "Log in"
-  sign:  "Sign up now!"
-  rails: "Rails logo"
+  welcome: "Welcome to the Sample App!"
+  does: "does not exist"
+  sign: "Sign up now!"
   static_pages:
     application:
       rubbyonrails: "Ruby on Rails Tutorial Sample App"
