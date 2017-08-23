@@ -1,14 +1,14 @@
 class SessionsController < ApplicationController
+  before_action :check_valid, only: [:create]
+
   def new; end
 
   def create
     user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
-      log_in user
-      params[:session][:remember_me] == Settings.a ? remember(user) : forget(user)
-      redirect_to user
+      check_valid
     else
-      flash.now[:danger] = I18n.t"invalid"
+      flash[:danger] = t "invalid"
       render :new
     end
   end
@@ -16,5 +16,13 @@ class SessionsController < ApplicationController
   def destroy
     log_out if logged_in?
     redirect_to root_url
+  end
+
+  private
+
+  def check_valid
+    log_in user
+    params[:session][:remember_me] == Settings.remember ? remember(user) : forget(user)
+    redirect_back_or user
   end
 end
